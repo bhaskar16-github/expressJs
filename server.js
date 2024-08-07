@@ -21,7 +21,7 @@ app.delete("/todos",(req,res)=>{
         }
     });
      res.status(202).send({
-        message: "Deleted item"
+        message: `Deleted item ${req.body.item}`
 });
 });
 app.all("/todos",(req,res)=>{
